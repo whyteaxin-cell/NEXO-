@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#080812">
+  <title>NEXO — Connect. Create. Share.</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <section class="hero">
+      <div class="logo">N</div>
+      <h1>NEXO</h1>
+      <p>Connect. Create. Share.</p>
+    </section>
+
+    <section class="card">
+      <div class="tabs">
+        <button class="tab active" onclick="showTab('login', this)">Login</button>
+        <button class="tab" onclick="showTab('signup', this)">Create account</button>
+      </div>
+
+      <div id="login" class="panel">
+        <label>Email or phone</label>
+        <input id="loginId" placeholder="Enter email or phone">
+        <label>Password</label>
+        <input type="password" id="loginPass" placeholder="Enter password">
+        <button class="primary" onclick="demoLogin()">Continue</button>
+        <button class="secondary" onclick="otp()">Login with OTP</button>
+        <small>By continuing, you agree to NEXO's Terms & Privacy Policy.</small>
+      </div>
+
+      <div id="signup" class="panel hidden">
+        <label>Full name</label>
+        <input placeholder="Your name">
+        <label>Username</label>
+        <input placeholder="@username">
+        <label>Email or phone</label>
+        <input placeholder="Email or phone number">
+        <button class="primary" onclick="demoSignup()">Create NEXO account</button>
+        <small>We'll verify your contact with a secure OTP.</small>
+      </div>
+    </section>
+  </main>
+  <div id="toast"></div>
+  <script src="app.js"></script>
+</body>
+</html>
