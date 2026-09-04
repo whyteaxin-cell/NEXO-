@@ -1,2 +1,2 @@
 # NEXO-
-this is an chatting app with premium features 
+NO 1 CHATTING APP 
