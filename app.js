@@ -206,8 +206,9 @@ window.googleLogin = async function() {
     } else if (error.code === "auth/popup-blocked") {
       toast("Please allow popups for NEXO");
     } else {
-      toast("Google login failed");
-    }
+    console.error("Google Login Error:", error);
+    toast("Google Login Error: " + error.code);
+}
   }
 };
 
