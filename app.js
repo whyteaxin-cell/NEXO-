@@ -18,7 +18,7 @@ import {
 
 // Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyDuRjtS4FrCGCuMquVtxSN79mxM1zZ2iEw",
+  apiKey: "AIzaSyCAOT3xWRyDd_aQ1_DmfEaK6D8k51okD80",
   authDomain: "nexo-e05a1.firebaseapp.com",
   projectId: "nexo-e05a1",
   storageBucket: "nexo-e05a1.firebasestorage.app",
