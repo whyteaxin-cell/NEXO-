@@ -196,7 +196,7 @@ window.googleLogin = async function() {
     );
 
     console.log("Google user:", user);
-
+   window.location.href = "home.html";
   } catch (error) {
 
     console.error(error);
