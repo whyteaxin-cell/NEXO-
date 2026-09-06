@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>NEXO Chats</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #f5f5f7;
+      color: #111;
+    }
+
+    .header {
+      height: 70px;
+      background: white;
+      display: flex;
+      align-items: center;
+      padding: 0 20px;
+      border-bottom: 1px solid #ddd;
+      gap: 20px;
+    }
+
+    .back {
+      font-size: 30px;
+      cursor: pointer;
+    }
+
+    .logo {
+      font-size: 30px;
+      font-weight: bold;
+    }
+
+    .search {
+      margin: 18px;
+    }
+
+    .search input {
+      width: 100%;
+      padding: 15px 20px;
+      border: none;
+      border-radius: 30px;
+      background: #e9e9ec;
+      font-size: 16px;
+      outline: none;
+    }
+
+    .chat-list {
+      background: white;
+      margin-top: 10px;
+    }
+
+    .chat {
+      display: flex;
+      align-items: center;
+      padding: 16px 20px;
+      border-bottom: 1px solid #eee;
+      cursor: pointer;
+    }
+
+    .chat:hover {
+      background: #f5f5f5;
+    }
+
+    .avatar {
+      width: 55px;
+      height: 55px;
+      border-radius: 50%;
+      background: #ddd;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 28px;
+      margin-right: 15px;
+    }
+
+    .chat-info {
+      flex: 1;
+    }
+
+    .name {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .message {
+      color: #777;
+      font-size: 15px;
+    }
+
+    .time {
+      color: #888;
+      font-size: 13px;
+    }
+
+    .bottom-nav {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 75px;
+      background: white;
+      border-top: 1px solid #ddd;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    .nav-item {
+      text-align: center;
+      font-size: 14px;
+      cursor: pointer;
+    }
+
+    .nav-icon {
+      font-size: 25px;
+      display: block;
+      margin-bottom: 3px;
+    }
+
+    .new-chat {
+      width: 55px;
+      height: 55px;
+      border-radius: 50%;
+      background: #111;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 32px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <div class="header">
+    <div class="back" onclick="window.location.href='home.html'">‹</div>
+    <div class="logo">NEXO</div>
+  </div>
+
+  <!-- SEARCH -->
+  <div class="search">
+    <input type="text" placeholder="Search chats...">
+  </div>
+
+  <!-- CHAT LIST -->
+  <div class="chat-list">
+
+    <div class="chat">
+      <div class="avatar">👤</div>
+
+      <div class="chat-info">
+        <div class="name">Alex</div>
+        <div class="message">Hey! What's up?</div>
+      </div>
+
+      <div class="time">10:32</div>
+    </div>
+
+    <div class="chat">
+      <div class="avatar">👩</div>
+
+      <div class="chat-info">
+        <div class="name">Maya</div>
+        <div class="message">See you tomorrow 😊</div>
+      </div>
+
+      <div class="time">09:18</div>
+    </div>
+
+    <div class="chat">
+      <div class="avatar">👦</div>
+
+      <div class="chat-info">
+        <div class="name">Arun</div>
+        <div class="message">Sent a photo 📷</div>
+      </div>
+
+      <div class="time">Yesterday</div>
+    </div>
+
+    <div class="chat">
+      <div class="avatar">👩</div>
+
+      <div class="chat-info">
+        <div class="name">Sara</div>
+        <div class="message">Let's chat later.</div>
+      </div>
+
+      <div class="time">Yesterday</div>
+    </div>
+
+  </div>
+
+  <!-- BOTTOM NAV -->
+  <div class="bottom-nav">
+
+    <div class="nav-item" onclick="window.location.href='home.html'">
+      <span class="nav-icon">🏠</span>
+      Home
+    </div>
+
+    <div class="nav-item">
+      <span class="nav-icon">💬</span>
+      Chats
+    </div>
+
+    <div class="new-chat">
+      +
+    </div>
+
+    <div class="nav-item">
+      <span class="nav-icon">👥</span>
+      People
+    </div>
+
+    <div class="nav-item">
+      <span class="nav-icon">👤</span>
+      Profile
+    </div>
+
+  </div>
+
+</body>
+</html>
